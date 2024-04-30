@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            reviews and feedback
+        </title>
+        <link rel="stylesheet" href="masterr.css">
+    </head>
+    <body><script>
+        src="E:\newcss\main.js"
+    </script>
+        <header>
+        <h1>reviews and feedback</h1>
+            <div class="container">
+                <div class="main">
+                    <div class="navbar">
+                        <div class="icon">
+                            <h2 class="logo">nikey</h2>
+                        </div>
+                        <div class="menu">
+                            <ul>
+                                <li>
+                                    <a href="home.htm">home</a>
+                                </li>
+                                <li>
+                                    <a href="news.htm">news</a>
+                                </li>
+                                <li>
+                                    <a href="products1.html">products</a>
+                                </li>
+                                <li>
+                                    <a href="indexx.html">reviews</a>
+                                </li>
+                                <li>
+                                    <a href="/Users/moro/Documents/VSCoding/ NIKEY WEBSITE Project/shoes_websites/2/about.html">about</a>
+                                </li>
+                            </ul>
+                            <img class="dlmood" src="moon.png" id="icon">
+                        </div>
+                        <div class="search">
+                            <input class="srch" type="search">
+                            <a href="#search">
+                                <button class="btn">
+                                    search
+                                </button>                        
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            <div class="rightside">
+                <h3>what our customers say about us</h3>
+                <p class="feedbackcontent">Lorem ipsum dolor sit amet<br> consectetur adipisicing elit. Animi sed 
+                    ur voluptates aperiam magni <br>ea at quas, repellat fugi
+                </p>
+                <div class="card">
+                    <div class="cardcontent">
+                        <img src="IMG_1.jpg" alt="pic">
+                    <div class="content">
+                        <p class="name">jess johny</p>
+                        <p>Lorem ipsum dolor sit amet cotem atque minima dolore facere velit delectus
+                             obcaecati, ullam ab, reprehenderit eve soluta. Cum, aperiam.</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="cardcontent">
+                        <img src="IMG_4.jpg" alt="pic">
+                    <div class="content">
+                        <p class="name">kevin sameh</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adue minima dolore facere velit delectus
+                             obcaecati, ullam ab, reprehenderit even. Cum, aperiam.</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="cardcontent">
+                        <img src="IMG_3.jpg" alt="pic">
+                    <div class="content">
+                        <p class="name">maria alexander</p>
+                        <p>Lorem ipsum dolor sit amet consectatque minima dolore facere velit delectus
+                             obcaecati, ullam ab, reprehenderit e Cum, aperiam.</p>
+                    </div>
+                    </div>
+                </div>
+
+            </div>
+                <div class="feedbackcontainer">
+                    <form name="fbform" onsubmit="return validform()">
+                    <h4>
+                        give us your feedback
+                    </h4>
+                    <div class="userid">
+                         <input type="text" name="fname"placeholder="enter your full name">
+                    </div>
+                    <div class="email">
+                         <input type="email" name="email"placeholder="enter your email">
+                    </div>
+                    <div class="tabox">
+                    <textarea name="fbbox" id="feedback"cols="37" rows="7.5" placeholder="enter your feedback here"></textarea>
+                </div>
+                   <div class="buttbox"> <button type="submit">send</button>
+                </div>
+                </form>
+                </div>
+        </header>
+        <script>
+            var icon = document.getElementById("icon");
+            icon.onclick = function(){
+                 document.body.classList.toggle("dark-theme")
+                if(document.body.classList.contains("dark-theme")){
+                    icon.src ="sun.png";
+                }else{
+                    icon.src="moon.png";
+                }
+            }
+            function validform(){
+                var x =document.forms["fbform"]["fname"].value;
+                var y =document.forms["fbform"]["email"].value;
+                var z =document.forms["fbform"]["fbbox"].value;
+                if (x==''||y==''||z=='') {
+                    alert("you must fill all the required fields");
+                    return false;
+                }
+            }
+
+        </script>
+    </body>
+</html>

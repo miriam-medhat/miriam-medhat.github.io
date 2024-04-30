@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="navbar">
+      <div class="icon">
+          <h2 class="logo">Nikey</h2>
+      </div>
+      <div class="nav-left">
+        <div class="menu">
+          <ul>
+              <li><a href="/Users/moro/Documents/VSCoding/ NIKEY WEBSITE Project/home.htm">Home</a></li> 
+              <li class="active"><a href="/Users/moro/Documents/VSCoding/ NIKEY WEBSITE Project/products1.html">Products</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="/Users/moro/Documents/VSCoding/ NIKEY WEBSITE Project/shoes_websites/2/about.html">About</a></li>
+          </ul>
+        </div>
+        <button onclick="theme()">Switch Mode</button>
+      </div>
+    </div>
+    <section class="section_container">
+      <div class="heading">View Product</div>
+      <div class="flex">
+        <div class="left">
+          <div class="main_image">
+            <img src="image/1.png" class="slide">
+          </div>
+          <div class="option flex">
+            <img src="image/1.png" onclick="img('image/1.png')">
+            <img src="image/2.png" onclick="img('image/2.png')">
+            <img src="image/3.png" onclick="img('image/3.png')">
+            <img src="image/4.png" onclick="img('image/4.png')">
+            <img src="image/5.png" onclick="img('image/5.png')">
+          </div>
+        </div>
+        <div class="right">
+          <h3>Nike Phantom Luna 2 Elite LV8</h3>
+          <h5>FG High-Top Football Boot</h5>
+          <h4>$999.99</h4>
+          <p>Obsessed with perfecting your craft? We made this for you. In the middle of the storm, with chaos swirling all around you, you've calmly found the final third of the pitch, thanks to your uncanny mix of on-ball guile and grace. Go and finish the job in the Phantom Luna 2 Elite. Revolutionary Nike Gripknit covers the striking area of the boot while Nike Cyclone 360 traction helps guide your unscripted agility. We design Elite boots for you and the world's biggest stars to give you high-level quality, because you demand greatness from yourself and your footwear.</p>
+          <h5>Color-Green Glow/Black</h5>
+          <div class="color flex1">
+            <span></span>
+            <span class="active"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <h5>Size-UK 10</h5>
+          <div class="sizes">
+            <span>UK 4</span>
+            <span>UK 5</span>
+            <span>UK 9</span>
+            <span class="active">UK 10</span>
+            <span>UK 10.5</span>
+            <span>UK 11</span>
+            <span>UK 11.5</span>
+            <span>UK 12</span>
+          </div>
+          <h5>Number</h5>
+          <div class="add flex1">
+            <span>-</span>
+            <label>1</label>
+            <span>+</span>
+          </div>
+  
+          <div class="buttons">
+            <a href="/Users/moro/Documents/VSCoding/ NIKEY WEBSITE Project/cart.htm" style="text-decoration:none;"><button>Add to Bag</button></a>
+          <button class="outline">Add to Favourite</button>
+          </div>
+        </div>
+      </div>
+      <div class="more-details">
+        <h5>Quick traction</h5>
+        <p>The Nike Cyclone 360 traction pattern helps you make quicker (improved agility when making cuts) and confident (helps reduce rotational traction) movements, so you can cut with speed while feeling fully secure when the game's intensity turns up.</p>
+        <h5>Snug fit</h5>
+        <p>Asymmetric lacing offers a large touch surface when dribbling, passing and scoring. A repositioned lacing pattern allows for increased midfoot adjustability to accommodate players with flatter or higher arches. The asymmetrical Flyknit cuff material provides snugness and shape around your ankle. Subtle ribs in the cuff allow for ball contact higher up the ankle in trapping and passing.</p>
+      </div>
+    </section>
+  </div>
+  <script>
+    function img(anything) {
+      document.querySelector('.slide').src = anything;
+    }
+
+    function change(change) {
+      const line = document.querySelector('.home');
+      line.style.background = change;
+    }
+
+    function theme() {
+      var element = document.body;
+      element.classList.toggle("dark-mode");
+    }
+  </script>
+</body>
+
+</html>

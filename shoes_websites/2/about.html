@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us</title>
+  <link rel="stylesheet" href="css/about.css" />
+ </head>
+
+ <body>
+  <header>
+   <nav class="navbar">
+    <h2>Nikey.</h2>
+    <ul>
+     <a href="/Users/moro/Documents/VSCoding/ NIKEY WEBSITE Project/products1.html" class="button"> View Products </a>
+     <div class="switch-mode">
+      <input type="checkbox" id="toggleTheme" class="toggle-button">
+    </div>
+    </ul>
+   </nav>
+
+   <h1 class="title">About Us</h1>
+  </header>
+
+  <section id="home">
+   <div class="home-left">
+    <img src="img/about-image.jpg" alt="" />
+   </div>
+   <div class="home-right">
+    <h2 class="home-heading">About Us</h2>
+    <p class="home-para">
+     Welcome to Nikey, the ultimate online shoe emporium for discerning footwear
+     aficionados! At Nikey, we're not just passionate about shoes; we're
+     obsessed. Our journey began with a simple mission: to curate a collection
+     of kicks that transcend trends and elevate individual style.
+    </p>
+    <a href="/Users/moro/Documents/VSCoding/ NIKEY WEBSITE Project/products1.html" class="btn"> Our Products</a>
+   </div>
+  </section>
+
+  <section id="workFlow">
+   <h2 class="heading">Nikey is more than just a marketplace</h2>
+   <p class="para">
+    It's a community united by a shared love for footwear and fashion. Through
+    exclusive releases, <br />
+    insider content, and immersive events, we aim to connect shoe
+    <br />enthusiasts and foster a culture of creativity and collaboration.
+   </p>
+   <div class="num-container">
+    <div class="num-item">27,882 <br /><br /><span>Customers</span></div>
+    <div class="num-item">24 H / W <br /><br /><span>Work Daily</span></div>
+    <div class="num-item">Up to 50% <br /><br /><span>Discount</span></div>
+   </div>
+  </section>
+
+  <section id="feature">
+   <div class="feature-left">
+    <h2>Our Features</h2>
+    <p>
+     At ShoeSphere, we're dedicated to providing an exceptional shopping
+     experience from start to finish. Our user-friendly website makes it easy to
+     find exactly what you're looking for, while our fast and reliable shipping
+     ensures that your new shoes arrive promptly at your doorstep. Plus, our
+     friendly customer service team is always here to assist you with any
+     questions or concerns you may have.
+    </p>
+    <ul>
+     <li>Wide Selection</li>
+     <li>Quality Assurance</li>
+     <li>Affordable Pricing</li>
+     <li>Easy Navigation</li>
+     <li>Free Shipping and Returns</li>
+    </ul>
+    <a href="/Users/moro/Documents/VSCoding/ NIKEY WEBSITE Project/shoes_websites/3/contact.html" class="btn"> Contact Us</a>
+   </div>
+   <div class="feature-right">
+    <img src="img/about-image-2.jpg" alt="" />
+   </div>
+  </section>
+
+  <section id="our-Team">
+   <h2>Our Members</h2>
+   <div class="teamContainer">
+    <div class="team-item">
+     <img src="img/team1.png" alt="" />
+     <h5 class="member-name">Mia Omar</h5>
+     <span class="role">Sells Man</span>
+    </div>
+    <div class="team-item">
+     <img src="img/team2.png" alt="" />
+     <h5 class="member-name">Ahmed Emad</h5>
+     <span class="role">Delivery Man</span>
+    </div>
+    <div class="team-item">
+     <img src="img/team3.png" alt="" />
+     <h5 class="member-name">Toqa Ebrahim</h5>
+     <span class="role">Sells Man</span>
+    </div>
+    <div class="team-item">
+     <img src="img/team4.jpg" alt="" />
+     <h5 class="member-name">Alaa Naser</h5>
+     <span class="role">Sells Man</span>
+    </div>
+   </div>
+  </section>
+
+  <script>
+   const checkbox = document.getElementById('toggleTheme');
+   checkbox.addEventListener('change', function() {
+       if(this.checked){
+           document.documentElement.setAttribute('data-theme', 'dark');
+       }else{
+           document.documentElement.setAttribute('data-theme', 'light');
+       }
+   });
+</script>
+ </body>
+</html>

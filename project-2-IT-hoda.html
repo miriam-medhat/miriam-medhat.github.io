@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>payment page</title>
+        <style>
+            *{
+    margin:0;
+    padding:0;
+}
+
+.main{
+    width:100%;
+    background:linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%);
+    background-position:center;
+    background-size:cover;
+    height:100%;
+}
+
+.navbar{
+    width:1200px;
+    height:75px;
+    margin:auto;
+}
+
+.icon{
+    width:200px;
+    float:left;
+    height:70px;
+}
+
+.logo{
+    color:rgb(255, 140, 0);
+    font-size:37px;
+    font-family:"lucida handwritting",segoe script;
+    padding-left:20px;
+    float:left;
+    padding-top:10px;
+}
+
+.menu{
+    width:400px;
+    float:left;
+    height:70px;
+}
+
+ul{
+    float:left;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+ul li{
+    list-style-type:none;
+    margin-left:62px;
+    margin-top:27px;
+    font-size:17px;
+}
+
+ul li a{
+    text-decoration:none;
+    color:white;
+    font-family:Arial;
+    font-weight:bold;
+}
+
+ul li a:hover{
+    color:rgb(255, 140, 0);
+}
+
+.search{
+    width:330px;
+    float:left;
+    margin-left:270px;
+}
+
+.srch{
+    font-family:'Times New Roman';
+    width:200px;
+    height:40px;
+    background:transparent;
+    border:1px solid rgb(255, 140, 0);
+    margin-top:13px;
+    color:white;
+    border-right:none;
+    font-size:16px;
+    float:left;
+    padding:10px;
+    border-bottom-left-radius:5px;
+    border-top-left-radius:5px;
+}
+
+.btn{
+    width:100px;
+    height:40px;
+    background:rgb(255, 140, 0);
+    border:2px solid rgb(255, 140, 0);
+    margin-top:13px;
+    color:white;
+    font-size:15px;
+    border-top-right-radius:5px;
+    border-bottom-right-radius:5px;
+}
+
+.btn:focus{
+    outline:none;
+}
+
+.srch:focus{
+    outline:none;
+}
+body {
+    background-image: url('https://img.freepik.com/free-photo/background-gradient-lights_23-2149304998.jpg?t=st=1714038965~exp=1714042565~hmac=e4e70bafba5bbc218ce2cf79571996917ddb4b44b752071c622a4bf33bade9b6&w=1380');
+    background-repeat: no-repeat;
+ 	background-attachment: fixed;
+    background-size: 100% 100%;
+    margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.mainscreen
+{
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+    flex-direction: column;
+    background-color: #DFDBE5;
+    background-image: url("https://wallpaperaccess.com/full/3063067.png");
+    color:orange;
+}
+.card {
+	width: 80rem;
+    margin: auto;
+    background: white;
+    position:center;
+    align-self: center;
+    top: 50rem;
+    border-radius: 1.5rem;
+    box-shadow: 4px 3px 20px #3535358c;
+    display:flex;
+    flex-direction: row;
+    
+}
+
+.leftside
+{
+    background: white;
+    width:50rem;
+    display: inline-flex;
+    align-items:center;
+    justify-content: center;
+    border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+}
+.product 
+{
+    object-fit: cover;
+	width: 45rem;
+    height: 25rem;
+    border-radius: 1.5rem;
+}
+.rightside {
+    background-color: #ffffff;
+	width: 60rem;
+	border-bottom-right-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    padding: 1rem 2rem 3rem 3rem;
+}
+p{
+    display:block;
+    font-size: 1.1rem;
+    margin: .8rem 0;
+}
+.inputbox {
+        color:black;
+	    width: 100%;
+        padding: 0.5rem;
+        border: none;
+        border-bottom: 1.5px solid orange;
+        margin-bottom: 1rem;
+        border-radius: 0.3rem;
+        font-family: 'Roboto',sans-serif;
+        color: rgb(75, 13, 13);
+        font-size: 1.1rem;  
+        outline:none;
+}    
+.expcvv {
+    display:flex;
+    justify-content: space-between;
+    padding-top: 0.6rem;
+}
+
+.exp_text{
+    padding-right: 1rem;
+}
+.cvv_text2{
+    padding:0 1rem;
+}
+.button{
+    background: linear-gradient(135deg, rgb(250, 102, 3) 0%, rgb(245, 217, 61) 100%);
+    padding: 15px;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    width:100%;
+    letter-spacing: .11rem;
+    outline:none;
+}
+.button:hover
+{
+	transform: scale(1.05) translateY(-3px);
+    box-shadow: 3px 3px 6px #38373785;
+}
+@media only screen and (max-width: 1000px) {
+    .card{
+        flex-direction: column;
+        width: auto;
+      
+    }
+
+    .leftside{
+        width: 100%;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 0;
+      border-top-right-radius:0;
+      border-radius:0;
+    }
+
+    .rightside{
+        width:auto;
+        border-bottom-left-radius: 1.5rem;
+        padding:0.5rem 3rem 3rem 2rem;
+      border-radius:0;
+    }
+    
+}
+.iconss{
+    padding-left: 20px;
+}
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <div class="navbar">
+                <div class="icon">
+                    <h2 class="logo">Nikey</h2>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="home.htm">Home</a></li> 
+                        <li><a href="news.htm">News</a></li>
+                        <li><a href="products1.html">Products</a></li>
+                        <li><a href="indexx.html">Reviews</a></li>
+                        <li><a href="/Users/moro/Documents/VSCoding/ NIKEY WEBSITE Project/shoes_websites/2/about.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="search">
+                    <input class="srch" type="search">
+                    <a href="#search"><button class="btn">Search</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="leftside">
+                <img src="https://img.freepik.com/free-photo/close-up-multi-colored-sports-shoe-modern-design-generated-by-ai_188544-19598.jpg?t=st=1714039253~exp=1714042853~hmac=8e161c3c545df55496b28992e8eb4e6b4d0452effe5aae5a056bef9fa52c13d1&w=1380"
+                class="product"
+                 alt="shoes background"/>
+            </div>
+            <div class="rightside">
+                <form actiom="">
+                    <h1 style="color:rgb(250, 102, 3)">CheckOut <img src="https://cdn-icons-png.flaticon.com/128/5097/5097344.png" 
+                    style="width:40px;height:30px"></h1>
+                    <h2 style="color:rgb(250, 102, 3)">payment information</h2>
+                    <p>First Name</p>
+                    <input type="text" 
+                        class="inputbox"
+                        name="name" required/>
+                    <p>Last Name</p>
+                    <input type="text"
+                        class="inputbox"
+                        name="name" required/>
+                    <p>Card Number</p>
+                    <input type="number"
+                            class="inputbox"
+                            name="card_number"
+                            id="card_number" required/>
+                    <p>Card Type</p> 
+                    <select class="inputbox"
+                        name="card_type"
+                        id="card_type" required>
+                        <option value="">
+                            *Select a Card Type*
+                        </option>
+                        <option value="Visa">Visa</option>
+                        <option value="RuPay">RuPay</option>
+                        <option value="MasterCard">MasterCard</option>
+                        <option value="PayPal">PayPal</option>
+                        <option value="ApplePay">ApplePay</option>
+                    </select> 
+                    <div class="expcvv">
+                        <p class="exp-text">Expiry</p>
+                        <input type="date"
+                                class="inputbox"
+                                name="exp_date"
+                                id="exp_date" required/>
+                        <p class="cvv-text">CVV</p>
+                        <input type="password"
+                                class="inputbox"
+                                name="CVV"
+                                id="CVV" required/>       
+                    </div>
+                    <p class="iconss" >
+                        <img src="https://cdn-icons-png.flaticon.com/128/196/196578.png"style="width:80px;height:80px">
+                        <img src="https://cdn-icons-png.flaticon.com/128/177/177025.png"style="width:80px;height:80px">
+                        <img src="https://cdn-icons-png.flaticon.com/128/14062/14062982.png"style="width:80px;height:80px">
+                        <img src="https://cdn-icons-png.flaticon.com/128/196/196566.png"style="width:80px;height:80px">
+                        <img src="https://cdn-icons-png.flaticon.com/128/5968/5968144.png"style="width:80px;height:80px">
+                    </p>
+                    <p>
+                        <button type="submit"
+                                class="button">CheckOut</button>
+                    </p>
+                        
+                </form>
+
+            </div>
+        </div>
+        
+    </body>
+</html>
